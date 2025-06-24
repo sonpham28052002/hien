@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'CENTURY';
+  src: url('./fonts/CENTURY.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BASKVILL';
+  src: url('./fonts/BASKVILL.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-century {
+  font-family: 'CENTURY', serif;
+}
+
+.font-BASKVILL {
+  font-family: 'BASKVILL', serif;
+}
+
+* {
+    scroll-behavior: smooth;
+}
