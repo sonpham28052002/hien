@@ -1,45 +1,49 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+// 👉 Import toàn bộ các component một cách tĩnh (eager)
+import HomeLayout from "../layout/home/index.vue";
+import Home from "../layout/home/Home.vue";
+import Cart from "../layout/home/Cart.vue";
+import Login from "../layout/login/index.vue";
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      component: () => import("../layout/home/index.vue"),
+      component: HomeLayout,
       children: [
         {
-          path: "/",
-          component: () => import("../layout/home/Home.vue"),
+          path: "",
+          component: Home,
           name: "home",
         },
         {
-          path: "/cart",
-          component: () => import("../layout/home/Cart.vue"),
+          path: "cart",
+          component: Cart,
           name: "cart",
         },
       ],
     },
     {
       path: "/login",
-      component: () => import("../layout/login/index.vue"),
+      component: Login,
       name: "login",
     },
-
     {
       path: "/:pathMatch(.*)*",
-      redirect: { name: "404" },
+      name: "404",
     },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth',
+        behavior: "smooth",
         top: 88,
       };
     }
-
-    return { top: 0, behavior: 'smooth' };
+    return { top: 0, behavior: "smooth" };
   },
 });
 

@@ -2,8 +2,8 @@
   <section class="h-screen bg-cover text-white flex relative items-top pt-40 md:items-start md:justify-left md:pt-[10%] px-[5%] font-century"
     style="background-image: url(images/bg.png)">
     <div class="px-4 relative">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4 font-BASKVILL">Damrei Khmer Restaurant</h2>
-      <p class="text-lg md:text-lg max-w-xl mx-auto ">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4 font-BASKVILL text-[#cf7c01]">Damrei Khmer Restaurant</h2>
+      <p class="text-lg md:text-lg max-w-xl">
         Nơi giao thoa giữa truyền thống Khmer và phong cách hiện đại. Vẻ đẹp tinh tế, huyền bí và đầy bản sắc của Khmer.
       </p>
       <a href="#collection"
