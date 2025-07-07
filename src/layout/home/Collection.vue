@@ -12,7 +12,7 @@
         <img class="carousel-img" src="/images/product/3.png">
         <img class="carousel-img" src="/images/product/4.png">
         <img class="carousel-img" src="/images/product/5.png">
-        <img class="carousel-img" src="/images/product/5.png">
+        <img class="carousel-img" src="/images/product/6.png">
         <img class="carousel-img" src="/images/product/khan_137_183.png">
         <img class="carousel-img" src="/images/product/khan_25_90_120k.png">
         <img class="carousel-img" src="/images/product/khan_100_100_180k.png">
@@ -67,6 +67,7 @@ onUnmounted(() => {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  background-size: cover;
 }
 
 .custom-arrow {
