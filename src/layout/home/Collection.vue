@@ -11,6 +11,12 @@
         <img class="carousel-img" src="/images/product/2.png">
         <img class="carousel-img" src="/images/product/3.png">
         <img class="carousel-img" src="/images/product/4.png">
+        <img class="carousel-img" src="/images/product/5.png">
+        <img class="carousel-img" src="/images/product/5.png">
+        <img class="carousel-img" src="/images/product/khan_137_183.png">
+        <img class="carousel-img" src="/images/product/khan_25_90_120k.png">
+        <img class="carousel-img" src="/images/product/khan_100_100_180k.png">
+        <img class="carousel-img" src="/images/product/khan_25_40_75k.png">
         <template #arrow="{ prev, next }">
           <div class="custom-arrow">
             <button type="button" class="custom-arrow--left" @click="prev">

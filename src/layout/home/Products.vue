@@ -40,7 +40,7 @@
         v-for="product in filteredProducts"
         :key="product.id"
       >
-        <div class="bg-gray-200 rounded-t-md relative">
+        <div class=" rounded-t-md relative">
           <div class="flex flex-row justify-between px-2 pt-1 h-fit absolute w-full">
             <span
               class="mt-2 text-white bg-[#520008] px-3 z-10  h-5 rounded-md text-sm "
@@ -60,7 +60,7 @@
           <img
             :src="product.image"
             alt="#"
-            class="w-full object-contain hover:scale-105 rounded-t-md transition-all duration-300"
+  class="w-full h-64 object-cover rounded-t-md transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div class="px-5 py-2 border-t max-h-56">
@@ -70,7 +70,7 @@
             </h3>
             <span
               >4.5<i class="fa fa-star text-yellow-400"></i>
-              <span class="text-xs text-blue-500">(1000)</span></span
+              <span class="text-xs text-blue-500">(352)</span></span
             >
           </div>
           <div class="flex-grow">
@@ -174,6 +174,46 @@ const products = ref([
     image: "/images/product/6.png",
     description:
       "Áo Polo Damrei mang phong cách hiện đại pha nét văn hóa Khmer.",
+  },
+    {
+    id: 7,
+    name: "Khăn Damrei 137x183",
+    price: 200000,
+    oldPrice: 279000,
+    type: "Khăn",
+    image: "/images/product/khan_137_183.png",
+    description:
+      "Khăn Damrei mang phong cách hiện đại pha nét văn hóa Khmer.",
+  },
+  {
+    id: 8,
+    name: "Khăn Damrei 25x40",
+    price: 75000,
+    oldPrice: 50000,
+    type: "Khăn",
+    image: "/images/product/khan_25_40_75k.png",
+    description:
+      "Khăn Damrei mang phong cách hiện đại pha nét văn hóa Khmer.",
+  },
+  {
+    id: 9,
+    name: "Khăn Damrei 100x100",
+    price: 180000,
+    oldPrice: 150000,
+    type: "Khăn",
+    image: "/images/product/khan_100_100_180k.png",
+    description:
+      "Khăn Damrei mang phong cách hiện đại pha nét văn hóa Khmer.",
+  },
+  {
+    id: 10,
+    name: "Khăn Damrei 25x90",
+    price: 120000,
+    oldPrice: 100000,
+    type: "Khăn",
+    image: "/images/product/khan_25_90_120k.png",
+    description:
+      "Khăn Damrei mang phong cách hiện đại pha nét văn hóa Khmer.",
   },
 ]);
 
